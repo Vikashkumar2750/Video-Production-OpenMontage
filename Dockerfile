@@ -17,5 +17,5 @@ RUN cd remotion-composer && npm install
 # बाकी सारा कोड copy करें
 COPY . .
 
-CMD python -m backlot open --port $PORT --host 0.0.0.0
+CMD ["python", "-m", "backlot", "serve", "--port", "8080"]
 
