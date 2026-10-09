@@ -17,5 +17,5 @@ RUN cd remotion-composer && npm install
 # बाकी सारा कोड copy करें
 COPY . .
 
-# कंटेनर चालू रखने के लिए
-CMD ["tail", "-f", "/dev/null"]
+CMD python -m backlot open --port $PORT --host 0.0.0.0
+
