@@ -17,5 +17,6 @@ RUN cd remotion-composer && npm install
 # बाकी सारा कोड copy करें
 COPY . .
 
-CMD ["python", "-m", "backlot", "serve", "--port", "8080"]
+CMD ["python", "-m", "backlot", "serve", "--host", "0.0.0.0", "--port", "8080"]
+
 
